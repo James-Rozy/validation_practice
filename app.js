@@ -104,7 +104,6 @@ const showPasswordError = () => {
 
 const validateConfirmPassword = () => {
   const confPassword = document.querySelector("#conf-password");
-  const password = document.querySelector("#password");
   const confPasswordError = document.querySelector(
     "#conf-password + span.error"
   );
@@ -114,7 +113,17 @@ const validateConfirmPassword = () => {
     confPasswordError.className = "error";
   }
 
-  if (confPassword.textContent != password.textContent) {
+  showConfPasswordError;
+};
+
+const showConfPasswordError = () => {
+  const confPassword = document.querySelector("#conf-password");
+  const password = document.querySelector("#password");
+  const confPasswordError = document.querySelector(
+    "#conf-password + span.error"
+  );
+
+  if (!(confPassword.value === password.value)) {
     confPasswordError.textContent = "The passwords do not match.";
   }
 

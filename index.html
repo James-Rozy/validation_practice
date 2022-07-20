@@ -25,7 +25,7 @@
             type="text"
             id="country"
             name="country"
-            minlength="8"
+            minlength="4"
             required
           />
           <span class="error" aria-live="polite"></span>
@@ -35,7 +35,7 @@
       <p>
         <label for="zip">
           <span>Please enter your zipcode:</span>
-          <input type="text" id="zip" name="zip" minlength="8" required />
+          <input type="text" id="zip" name="zip" minlength="5" required />
           <span class="error" aria-live="polite"></span>
         </label>
       </p>
@@ -67,6 +67,8 @@
           <span class="error" aria-live="polite"></span>
         </label>
       </p>
+
+      <button type="submit" id="submit">Submit</button>
     </form>
   </body>
 </html>

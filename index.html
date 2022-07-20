@@ -1,64 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Browser Form Validation</title>
-		<link rel="stylesheet" href="style.css" />
-		<script src="app.js" defer></script>
-	</head>
-	<body>
-		<form action="#" novalidate>
-			<p>
-				<label for="email">
-					<span>Please enter an email address:</span>
-					<input type="email" id="email" name="email" minlength="8" required />
-					<span class="error" aria-live="polite"></span>
-				</label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <form action="#" novalidate>
+      <p>
+        <label for="email">
+          <span>Please enter an email address:</span>
+          <input type="email" id="email" name="email" minlength="8" required />
+          <span class="error" aria-live="polite"></span>
+        </label>
+      </p>
 
-				<label for="country">
-					<span>Please enter your country:</span>
-					<input
-						type="text"
-						id="country"
-						name="country"
-						minlength="8"
-						required
-					/>
-					<span class="error" aria-live="polite"></span>
-				</label>
+      <p>
+        <label for="country">
+          <span>Please enter your country:</span>
+          <input
+            type="text"
+            id="country"
+            name="country"
+            minlength="8"
+            required
+          />
+          <span class="error" aria-live="polite"></span>
+        </label>
+      </p>
 
-				<label for="zip">
-					<span>Please enter your zipcode:</span>
-					<input type="text" id="zip" name="zip" minlength="8" required />
-					<span class="error" aria-live="polite"></span>
-				</label>
+      <p>
+        <label for="zip">
+          <span>Please enter your zipcode:</span>
+          <input type="text" id="zip" name="zip" minlength="8" required />
+          <span class="error" aria-live="polite"></span>
+        </label>
+      </p>
 
-				<label for="password">
-					<span>Please enter a password:</span>
-					<input
-						type="password"
-						id="password"
-						name="password"
-						minlength="8"
-						required
-					/>
-					<span class="error" aria-live="polite"></span>
-				</label>
+      <p>
+        <label for="password">
+          <span>Please enter a password:</span>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="8"
+            required
+          />
+          <span class="error" aria-live="polite"></span>
+        </label>
+      </p>
 
-				<label for="conf-password">
-					<span>Please confirm your password:</span>
-					<input
-						type="password"
-						id="conf-password"
-						name="conf-password"
-						minlength="8"
-						required
-					/>
-					<span class="error" aria-live="polite"></span>
-				</label>
-			</p>
-		</form>
-	</body>
+      <p>
+        <label for="conf-password">
+          <span>Please confirm your password:</span>
+          <input
+            type="password"
+            id="conf-password"
+            name="conf-password"
+            minlength="8"
+            required
+          />
+          <span class="error" aria-live="polite"></span>
+        </label>
+      </p>
+    </form>
+  </body>
 </html>
